@@ -1,42 +1,46 @@
-<html>
-  <head>
-    <title>CALCULATOR</title>
-    <link rel="stylesheet" href="Index.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CALCULATOR</title>
+    <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
     </head>
-  <body>
-    <div class="calc">
+</head>
+<body>
+  <div class="calc">
     <div class="container">
       <form>
       <div class="output">
-        <input placeholder="0.00" class="Out">
+        <input type="text" placeholder="0.00" id="out">
       </div>
       <div class="btn">
         
-          <button class="funBtn" onClick="clear()" value="c">c</button>
-          <button class="funBtn" onClick="back()" value="?">?</button>
-          <button onClick="solve('%')" value="%">%</button>
-          <button onClick="solve('/')" value="/">/</button>
+          <button class="funBtn" type="button" onclick="Clear()" value="c">c</button>
+          <button class="funBtn" type="button" onclick="Back()" value="?">?</button>
+          <button type="button" onclick="Solve('%')" value="%">%</button>
+          <button type="button" onclick="Solve('/')" value="/">/</button>
           <br>
-          <button onClick="solve(7)" value="7">7</button>
-          <button onClick="solve(8)" value="8">8</button>
-          <button onClick="solve(9)" value="9">9</button>
-          <button onClick="solve()" value="">*</button>
+          <button type="button" onclick="Solve('7')" >7</button>
+          <button type="button" onclick="Solve('8')" value="8">8</button>
+          <button type="button" onclick="Solve('9')" value="9">9</button>
+          <button type="button" onclick="Solve('*')" value="">*</button>
           <br>
-          <button onClick="solve(4)" value="4">4</button>
-          <button onClick="solve(5)" value="5">5</button>
-          <button onClick="solve(6)" value="6">6</button>
-          <button onClick="solve('-')" value="-">-</button>
+          <button type="button" onclick="Solve('4')" value="4">4</button>
+          <button type="button" onclick="Solve('5')" value="5">5</button>
+          <button type="button" onclick="Solve('6')" value="6">6</button>
+          <button type="button" onclick="Solve('-')" value="-">-</button>
           <br>
-          <button onClick="solve(1)" value="1">1</button>
-          <button onClick="solve(2)" value="2">2</button>
-          <button onClick="solve(3)" value="3">3</button>
-          <button onClick="solve('+')" value="+">+</button>
+          <button type="button" onclick="Solve('1')" value="1">1</button>
+          <button type="button" onclick="Solve('2')" value="2">2</button>
+          <button type="button" onclick="Solve('3')" value="3">3</button>
+          <button type="button" onclick="Solve('+')" value="+">+</button>
           <br>
-          <button onClick="solve('00')" value="00">00</button>
-          <button onClick="solve(0)" value="0">0</button>
-          <button onClick="solve('.')" value=".">.</button>
-          <button class="result" onClick="result()" value="=">=</button>
+          <button type="button" onclick="Solve('00')" value="00">00</button>
+          <button type="button" onclick="Solve('0')" value="0">0</button>
+          <button type="button" onclick="Solve('.')" value=".">.</button>
+          <button class="result" type="button" onclick="result()" value="=">=</button>
           <br>
         
       </div>
@@ -44,5 +48,7 @@
     </div>
       
       </div>
-    </body>
+
+</body>
+   
 </html>
